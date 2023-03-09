@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NAVEGACION CONTACTO</title>
+    <meta charset="utf-8" >
+    <style >      
+        form {            
+            width: 400px;
+            margin: 0 auto;
+            padding: 1em;
+            border-radius: 1em; 
+            border: 3px solid salmon;                      
+        }  
+        .button-container{
+            text-align: right;
+        }
+        button{
+            border: 3px solid green;
+            border-radius: 15%;
+            font-size: 22px;
+            width: 120px;
+            height: 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: black;
+            color: white;    
+        }
+        .formlist li + li {
+            margin-bottom: 1em;
+        }
+        input, textarea {
+            width: 300px;
+            box-sizing: border-box;
+            border: 1px solid grey;
+        }
+        .text-area {            
+            resize: none;            
+            vertical-align: top;
+            height: 5em;            
+        }
+        label {
+            display: inline-block;
+            text-align: right;
+            width: 90px ;
+        }
+        .formlist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+       .navlist{
+           list-style: none;           
+           padding: 0;
+           margin:  0;
+           overflow: hidden;
+           background-color: rgb(30, 33, 199);
+       }    
+       .navitem{
+            float: left;                      
+        }
+        .navlink {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        .navlink:hover {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <nav >  
+                <ul class="navlist">
+                    <li class="navitem"><a class="navlink" href="./inicio.html">INICIO</a>  </li>
+                    <li class="navitem" ><a class="navlink" href="./proyectos.html">PROYECTOS</a>  </li>
+                    <li class="navitem" ><a class="navlink" href="./nosotros.html">SOBRE NOSOTROS</a>  </li>
+                    <li class="navitem" ><a class="navlink" href="./contacto.html">CONTACTANOS</a>  </li>
+                </ul>
+            </nav>  
+        </nav>
+    </header>
+    <br>
+   <form>
+       <ul class="formlist">
+           <li>
+            <label for="nombre">Nombre:</label>
+            <input maxlength="25" placeholder="Ingrese su nombre" id="nombre" name="user_name">
+            </li>
+        <li>
+           <label for="email">Email:</label>
+           <input maxlength="25" placeholder="Ingrese su Email" id="email" type="email" name="user_email">
+        </li>
+        <li>
+            <label for="mensaje">Comentario:</label>
+            <textarea  maxlength="120"  placeholder="Diganos lo que quiera" name="Area de Texto" id="mensaje" cols="30" rows="5" class="text-area"></textarea>        
+        </li>
+        <li class="button-container">
+            <button type="submit"> ENVIAR</button>
+        </li>
+       </ul>         
+   </form> 
+    
+</body>
+</html>
